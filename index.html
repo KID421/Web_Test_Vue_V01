@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>測試 Vue</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="test-a">
+        <test-a></test-a>
+        <test-a></test-a>
+        <test-a></test-a>
+    </div>
+
+    <div id="drink">
+        <product-item v-for="item in products" v-bind:product="item" v-bind:key="item.id"></product-item>
+    </div>
+
+    <div id="navbar">
+        <navbar></navbar>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./test.js"></script>
+</body>
+</html>
